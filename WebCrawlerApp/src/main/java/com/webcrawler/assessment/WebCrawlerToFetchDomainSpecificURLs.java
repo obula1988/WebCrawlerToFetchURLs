@@ -33,7 +33,6 @@ public class WebCrawlerToFetchDomainSpecificURLs {
 		if (!links.contains(URL)) {
 			try {
 				if (links.add(URL)) {
-					System.out.println("URL : " + URL);
 					appendStrToFile(fileName, URL);
 				}
 
@@ -48,7 +47,7 @@ public class WebCrawlerToFetchDomainSpecificURLs {
 					System.exit(0);
 				}
 			} catch (IOException e) {
-				System.err.println("For '" + URL + "': " + e.getMessage());
+				 e.getMessage();
 			}
 		}
 	}
